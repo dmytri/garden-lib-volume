@@ -1,0 +1,15 @@
+kind: Module
+type: container
+name: lib
+tasks:
+  - name: seed-volume-lib
+    volumes:
+      - name: volume-lib
+        hostPath: /data/lib
+        containerPath: /app/lib
+    command: 
+     - /bin/sh
+     - -c
+     - |-
+        cp -rf /app/src/* /app/lib/
+        find /app/lib -type f | xargs ls -l

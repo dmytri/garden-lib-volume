@@ -1,0 +1,17 @@
+kind: Command
+name: test-lib
+description:
+  short: test scripts mounted from lib volume
+gardenCommand:
+  - exec
+  - app
+  - /bin/sh /app/lib/scripts/test
+---
+kind: Command
+name: update-lib
+description:
+  short: update scripts mounted from lib volume
+gardenCommand:
+  - run
+  - task
+  - seed-volume-lib

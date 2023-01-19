@@ -1,0 +1,12 @@
+kind: Project
+name: fixturevolume
+variables:
+    volumes-lib:
+      - name: volume-lib
+        hostPath: /data/lib
+        containerPath: /app/lib
+environments:
+  - name: default
+providers:
+  - name: local-kubernetes
+    buildMode: cluster-buildkit
