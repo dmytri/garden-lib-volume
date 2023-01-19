@@ -1,4 +1,5 @@
 #/bin/bash
 
 echo "Welcome!"
-echo "This, my friend, is a test."
+echo "This, my friend, is indeed but a test."
+echo "Hope you find it pleasent."

@@ -7,7 +7,7 @@ services:
     replicas: 1 
     volumes:
       - name: volume-lib
-        hostPath: /data/${environment.namespace}/lib
+        hostPath: /data/${environment.namespace}-lib
         containerPath: /app/lib
     devMode:
       sync:
