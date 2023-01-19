@@ -5,7 +5,7 @@ tasks:
   - name: seed-volume-lib
     volumes:
       - name: volume-lib
-        hostPath: /data/lib
+        hostPath: /data/${environment.namespace}/lib
         containerPath: /app/lib
     command: 
      - /bin/sh
