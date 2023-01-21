@@ -1,5 +1,5 @@
 
-# Multistage Docker Example
+# VOLUME SEEDING
 
 ## Example Explanation
 
