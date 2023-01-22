@@ -4,10 +4,10 @@
 ## Example Explanation
 
 ### Question
-*How might we* pre-seed a volume with some assets and make the available for services.
+*How might we* pre-seed a volume with some assets and make them available for services.
 
 ### Why
-A customer has some assets they wold like to make availale to one or more pods without needing to rebuild containers to update them.
+You have some assets you would like to make availale to one or more pods without needing to rebuild containers to update them.
 
 ### How
 Use a garden task and a utility container to copy the assets to a volume
@@ -20,7 +20,8 @@ Use a garden task and a utility container to copy the assets to a volume
 ## Running Example
 
 ### Requires
-minikube
+
+- minikube
 
 Note: this exampe uses the hostPath storage class that comes with minikube, so
 this is a one node solution, to use in a real scenario with multiple nodes, a
@@ -54,5 +55,3 @@ distributed storage class would be required.
 - [https://docs.garden.io/using-garden/tasks](https://docs.garden.io/using-garden/tasks)
 - [https://docs.garden.io/guides/container-modules#mounting-volumes](https://docs.garden.io/guides/container-modules#mounting-volumes)
 - [https://garden.io](https://garden.io)
-
-
